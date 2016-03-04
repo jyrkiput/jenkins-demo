@@ -9,7 +9,7 @@ node {
 	sh "./gradlew test"
 }
 stage 'Package'
-node('remote') {
+node('master') {
 	git url: 'https://github.com/jyrkiput/jenkins-demo'
 	sh "./gradlew jar"
 }
