@@ -5,7 +5,7 @@ stages:
 job1:
   stage: build
   script:
-    - ./build.sh
+    - ./gradlew check
   only:
     - master
   tags:
